@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Felipe Almeida - Portfolio Page</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+
+
+
+
+
+    <style media="screen">
+        body {
+            background-color: #5036A6;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        header {
+            padding-top: 8rem;
+            text-align: left;
+            max-width: 1000px;
+            margin: 0 auto;
+            color: white;
+        }
+        h1 {
+            font-size: 5rem;
+            margin: 0;
+            padding: 0;
+        }
+        header p {
+            margin: 4rem 0;
+            font-size: 1.5rem;
+            line-height: 2rem;
+            opacity: .5;
+        }
+        section {
+            max-width: 1000px;
+            background-color: white;
+            margin: 0 auto;
+            padding: 2rem;
+            padding-bottom: 10rem;
+        }
+        section img {
+            max-width: 250px;
+        }
+        section img:last-of-type {
+            max-height: 100px;
+        }
+        .studies-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-rows: auto;
+            grid-gap: 2rem;
+
+        }
+        .studies-list a {
+            justify-self: center;
+            align-self: center;
+        }
+    </style>
+
+
+    </head>
+    <body>
+        <header>
+            <h1>Felipe Almeida</h1>
+            <h1>Portfolio Page</h1>
+            <p>I would like to focus my studies on React.js. I've started to study a little bit during the break, and since our group decided to use React.js in our project, I would like to keep studying the usage of this library.</p>
+        </header>
+
+        <section>
+            <h2>Studies Resources</h2>
+            <div class="studies-list">
+                <a href="https://www.youtube.com/playlist?list=PLjyEYOdngXW_pzj7Vt8Q83bAR3LKepXmX"><img src="youtube.png" alt="youtube logo"></a>
+                <a href="https://www.lynda.com/React-js-tutorials/React-js-Essential-Training/496905-2.html"><img src="lynda.jpeg" alt="Lynda logo"></a>
+                <a href="https://reactjs.org/"><img src="react.png" alt="React logo"></a>
+            </div>
+
+
+        </section>
+
+
+    </body>
+</html>
