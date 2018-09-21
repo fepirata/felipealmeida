@@ -1,84 +1,150 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Felipe Almeida - Portfolio Page</title>
+<head>
+    <meta charset="utf-8">
+    <title>Felipe Almeida - Portfolio Page</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
 
 
 
 
 
     <style media="screen">
-        body {
-            background-color: #5036A6;
-            font-family: 'Ubuntu', sans-serif;
-        }
-        header {
-            padding-top: 8rem;
-            text-align: left;
-            max-width: 1000px;
-            margin: 0 auto;
-            color: white;
-        }
-        h1 {
-            font-size: 5rem;
-            margin: 0;
-            padding: 0;
-        }
-        header p {
-            margin: 4rem 0;
-            font-size: 1.5rem;
-            line-height: 2rem;
-            opacity: .5;
-        }
-        section {
-            max-width: 1000px;
-            background-color: white;
-            margin: 0 auto;
-            padding: 2rem;
-            padding-bottom: 10rem;
-        }
-        section img {
-            max-width: 250px;
-        }
-        section img:last-of-type {
-            max-height: 100px;
-        }
-        .studies-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            grid-template-rows: auto;
-            grid-gap: 2rem;
+    body {
+        background-color: #5036A6;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    header {
+        padding-top: 8rem;
+        text-align: left;
+        max-width: 1000px;
+        margin: 0 auto;
+        color: white;
+    }
+    h1 {
+        font-size: 5rem;
+        margin: 0;
+        padding: 0;
+    }
+    h3 {
+        margin-bottom: 1rem;
+        margin-top: 3rem;
+    }
+    header p {
+        margin: 4rem 0;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        opacity: .5;
+    }
+    section {
+        max-width: 1000px;
+        background-color: white;
+        margin: 0 auto;
+        padding: 2rem;
+        padding-bottom: 10rem;
+    }
+    .main-class img {
+        max-width: 250px;
+    }
+    .main-class img:last-of-type {
+        max-height: 100px;
+    }
+    .studies-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-rows: auto;
+        grid-gap: 2rem;
 
-        }
-        .studies-list a {
-            justify-self: center;
-            align-self: center;
-        }
+    }
+    .studies-list a {
+        justify-self: center;
+        align-self: center;
+    }
+    hr {
+        /* margin-top: 5rem; */
+        border-color: #fff;
+        opacity: .5;
+    }
+    section p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .section-ul li {
+        margin-bottom: .8rem;
+    }
+
+    .section-content {
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0 auto;
+        display: block;
+    }
     </style>
 
 
-    </head>
-    <body>
-        <header>
-            <h1>Felipe Almeida</h1>
-            <h1>Portfolio Page</h1>
-            <p>I would like to focus my studies on React.js. I've started to study a little bit during the break, and since our group decided to use React.js in our project, I would like to keep studying the usage of this library.</p>
-        </header>
+</head>
+<body>
+    <header>
+        <h1>Felipe Almeida</h1>
+        <h1>Portfolio Page</h1>
+        <p>I would like to focus my studies on React.js. I've started to study a little bit during the break, and since our group decided to use React.js in our project, I would like to keep studying the usage of this library.</p>
+    </header>
 
-        <section>
-            <h2>Studies Resources</h2>
-            <div class="studies-list">
-                <a href="https://www.youtube.com/playlist?list=PLjyEYOdngXW_pzj7Vt8Q83bAR3LKepXmX"><img src="youtube.png" alt="youtube logo"></a>
-                <a href="https://www.lynda.com/React-js-tutorials/React-js-Essential-Training/496905-2.html"><img src="lynda.jpeg" alt="Lynda logo"></a>
-                <a href="https://reactjs.org/"><img src="react.png" alt="React logo"></a>
-            </div>
-
-
-        </section>
+    <section class="main-class">
+        <h2>Studies Resources</h2>
+        <div class="studies-list">
+            <a href="https://www.youtube.com/playlist?list=PLjyEYOdngXW_pzj7Vt8Q83bAR3LKepXmX"><img src="youtube.png" alt="youtube logo"></a>
+            <a href="https://www.lynda.com/React-js-tutorials/React-js-Essential-Training/496905-2.html"><img src="lynda.jpeg" alt="Lynda logo"></a>
+            <a href="https://reactjs.org/"><img src="react.png" alt="React logo"></a>
+        </div>
 
 
-    </body>
+    </section>
+
+    <section>
+        <hr>
+        <h2>Framework Overview, Prototype Idea</h2>
+        <h3>What is React.js?</h3>
+        <p>React.js is a library focused in create interfaces based on components. The main idea is that we can create components for each part of the website. These components may be bigger than others and may use smaller components inside. Although, the main structure of React.js is: components.</p>
+
+        <p>Other important point about React.js, is because these components can be reusable in other parts of the website, this way, you don’t need to code again the whole page if it uses the same structure. Also, depending the way the components are created, they can be used in “smart ways”, so It can be reusable for different purposes.</p>
+
+        <p>The name “React” itself give us a hint about one of its potentials: React.js can reacts to different states. With that functionality the component can be written with the methods to react to specific segments inside the component. It creates a very organized and controlled structure.</p>
+
+
+        <h3>Why React.js?</h3>
+
+        <p>React.js it’s a library to create UI that’s is in ascension since 2014, the number of websites and products that’re based in React.js keeps increasing, as well as the number of job offers. </p>
+
+        <p>It’s important to mention that I don’t have a background in programming, and the language that I have more knowledge is JavaScript. Based on my research, React.js is not a hard library to learn, once its API is very short to learn.</p>
+
+        <p>These couple reasons make me choose to learn React.js for this term.</p>
+
+        <h3>How it works?</h3>
+
+        <p>One of the (great) points of React.js is how it works. React.js creates a Virtual DOM, that way we don’t need to manipulate the changes directly in the DOM, but just in the Virtual DOM. Then, the React.js algorithms runs to make the comparison through differentiation, and just replace what was actually changed, instead of create a complete new DOM. I will explain in a few steps how it works:
+        </p>
+
+        <ul class="section-ul">
+            <li>Event triggered is sent to the application;</li>
+            <li>React.js creates a Virtual DOM for before and a Virtual DOM for after;</li>
+            <li>It compares these two DOMs and Patch the instructions to the Browser DOM;</li>
+            <li>The Browser DOM is changed just in the specific part requested.</li>
+        </ul>
+
+        <img src="asset01.png" alt="" class="section-content">
+
+        <h3>Prototype Idea</h3>
+
+        <p>I would like to create a simple system that can help me to understand the structure to create a web application. Therefore, I will create simple components to build main sections of a website: Header, Content and Footer. For each one of them, I will create a component. Also, I will create two additional content pages, to change them inside the page using buttons. In addition to that I want to add a textbox to change dynamically the text inside the content. </p>
+
+        <img src="asset02.png" alt="" class="section-content">
+
+        <p>Throughout this process I can understand the basics of how to work with React.js and learn with the mistakes and some struggles during the process.</p>
+    </section>
+
+
+</body>
 </html>
